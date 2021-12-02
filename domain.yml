@@ -1,0 +1,92 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- chitchat:
+    use_entities: true
+- request_help:
+    use_entities: true
+- stop:
+    use_entities: true
+- inform_arrival_country:
+    use_entities: true
+- inform_departure_country:
+    use_entities: true
+- inform_departure_date:
+    use_entities: true
+- inform_vaccine_name:
+    use_entities: true
+- inform_last_vaccination_date:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_welcome:
+  - text: Hello, I am a Travel Medical Consultant for Australia, Ethiopia and Sudan. How may I help you?
+  utter_ask_arrival_country:
+  - text: I need some information before to advice you. Which country are you traveling to?
+  - text: I need some information before to advice you. Where are you going?
+  - text: I need some information before to advice you. Which country are you departing to?
+  utter_ask_departure_country:
+  - text: Which country are you traveling from?
+  - text: Where are you leaving from?
+  - text: Where are you departing from?
+  utter_ask_departure_date:
+  - text: When will you be leaving?
+  - text: When are you leaving?
+  - text: When are you traveling?
+  - text: When is your flight?
+  utter_ask_is_vaccinated:
+  - text: Are you vaccinated?
+  - text: Have you been vaccinated?
+  - text: Have you taken vaccination?
+  utter_ask_is_covid_vaccinated:
+  - text: Are you vaccinated against COVID-19?
+  - text: Did you take COVID-19 vaccination?
+  utter_ask_vaccine_name:
+  - text: Which vaccine did you take?
+  - text: What vaccine did you take?
+  utter_ask_is_yellow_fever_vaccinated:
+  - text: Are you vaccinated against yellow fever?
+  - text: Did you take yellow fever vaccination?
+  utter_ask_last_vaccination_date:
+  - text: When was your last vaccination date?
+  - text: When did you take your last vaccine?
+  - text: When was your last vaccine appointment?
+  utter_ask_has_vaccination_certificate:
+  - text: Do you have vacccine certificate?
+  utter_ask_continue:
+  - text: Would you like to continue?
+  utter_submit:
+  - text: Thank you! Your information has been recorded.
+  utter_slot_values:
+  - text: 'You have submitted the following answers:'
+actions: []
+forms: {}
+e2e_actions: []

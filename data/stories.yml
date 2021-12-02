@@ -1,0 +1,103 @@
+version: "2.0"
+
+stories:
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: request_help
+  - action: utter_ask_arrival_country
+  - intent: inform_arrival_country
+  - action: utter_ask_departure_country
+  - intent: inform_departure_country
+  - action: utter_ask_departure_date
+  - intent: inform_departure_date
+  - action: utter_ask_is_vaccinated
+  - intent: affirm
+  - action: utter_ask_is_covid_vaccinated
+  - intent: affirm
+  - action: utter_ask_vaccine_name
+  - intent: inform_vaccine_name
+  - action: utter_ask_is_yellow_fever_vaccinated
+  - intent: affirm
+  - action: utter_ask_last_vaccination_date
+  - intent: inform_last_vaccination_date
+  - action: utter_ask_has_vaccination_certificate
+  - intent: affirm
+  - action: utter_submit
+
+
+- story: happy path 1
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: request_help
+  - action: utter_ask_arrival_country
+  - intent: inform_arrival_country
+  - action: utter_ask_departure_country
+  - intent: inform_departure_country
+  - action: utter_ask_departure_date
+  - intent: inform_departure_date
+  - action: utter_ask_is_vaccinated
+  - intent: affirm
+  - action: utter_ask_is_covid_vaccinated
+  - intent: deny
+  - action: utter_ask_is_yellow_fever_vaccinated
+  - intent: affirm
+  - action: utter_ask_last_vaccination_date
+  - intent: inform_last_vaccination_date
+  - action: utter_ask_has_vaccination_certificate
+  - intent: affirm
+  - action: utter_submit
+
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: request_help
+  - action: utter_ask_arrival_country
+  - intent: inform_arrival_country
+  - action: utter_ask_departure_country
+  - intent: inform_departure_country
+  - action: utter_ask_departure_date
+  - intent: inform_departure_date
+  - action: utter_ask_is_vaccinated
+  - intent: affirm
+  - action: utter_ask_is_covid_vaccinated
+  - intent: affirm
+  - action: utter_ask_vaccine_name
+  - intent: inform_vaccine_name
+  - action: utter_ask_is_yellow_fever_vaccinated
+  - intent: deny
+  - action: utter_ask_last_vaccination_date
+  - intent: inform_last_vaccination_date
+  - action: utter_ask_has_vaccination_certificate
+  - intent: affirm
+  - action: utter_submit
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_welcome
+  - intent: request_help
+  - action: utter_ask_arrival_country
+  - intent: inform_arrival_country
+  - action: utter_ask_departure_country
+  - intent: inform_departure_country
+  - action: utter_ask_departure_date
+  - intent: inform_departure_date
+  - action: utter_ask_is_vaccinated
+  - intent: affirm
+  - action: utter_ask_is_covid_vaccinated
+  - intent: affirm
+  - action: utter_ask_vaccine_name
+  - intent: inform_vaccine_name
+  - action: utter_ask_is_yellow_fever_vaccinated
+  - intent: affirm
+  - action: utter_ask_last_vaccination_date
+  - intent: inform_last_vaccination_date
+  - action: utter_ask_has_vaccination_certificate
+  - intent: deny
+  - action: utter_submit

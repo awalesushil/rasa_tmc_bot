@@ -1,0 +1,161 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - What's your name?
+    - yo
+    - Hey
+    - Hello
+    - Hi
+    - help
+    - Hey!
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - yes, I am
+    - Yes, I am vaccinated
+    - Yes, I did take vaccination.
+    - Yes
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I don't know.
+    - No, I didn't take any vaccination
+    - No, I don't have it
+    - Nope
+- intent: chitchat
+  examples: |
+    - How is the weather?
+    - What's your name?
+    - How are you called?
+    - Are you a bot?
+    - Are you a human?
+    - How are you doing?
+    - Are you there?
+- intent: request_help
+  examples: |
+    - Can you help me?
+    - Help me!
+    - Help me, please!
+    - Help!
+    - Will you help me?
+    - Please help
+    - I need some travel medical advice.
+    - I need advice on travel vaccination.
+    - I need help
+    - Could you help me with vaccination for traveling.
+    - I need your advice.
+    - I need some advice
+    - I need your advice
+    - I am seeking travel vaccination advice.
+    - I need adivce
+    - I need some travel vaccination advice.
+    - I need travel vaccination advice.
+- intent: stop
+  examples: |
+    - I don't want to give my information.
+    - Stop
+    - Stop, please.
+    - Please stop.
+    - No, I don't want this.
+    - This is not what I'm asking for.
+    - What are you doing?
+- intent: inform_arrival_country
+  examples: |
+    - Australia
+    - Ethiopia
+    - Sudan
+    - I am traveling to country.
+    - I am going to country.
+    - I am flying to country.
+    - I am traveling to Australia
+    - I am going to Australia
+    - I am going to Ethiopia
+    - I am traveling to Ethiopia
+    - I am going to Sudan
+    - I am traveling to Sudan
+    - I want to travel to Australia
+    - I am traveling to Australia.
+- intent: inform_departure_country
+  examples: |
+    - Germany
+    - Spain
+    - Italy
+    - France
+    - I am traveling from Germany.
+    - I am going from France.
+    - I am flying from Finland.
+    - I am traveling from Sweden
+    - I am going from Germany.
+    - I am leaving from Germany.
+- intent: inform_departure_date
+  examples: |
+    - I am traveling on date
+    - I am flying on date
+    - January 1
+    - 28.11.2021
+    - 5 Nov
+    - Aug 21 2020
+    - 21st June
+- intent: inform_vaccine_name
+  examples: |
+    - I got Moderna
+    - Pfizer
+    - I have Johnson & Johnson
+    - I got Biontech
+    - I took J&J
+- intent: inform_last_vaccination_date
+  examples: |
+    - I got vaccinated on July 3.
+    - I had my vaccine on September 9.
+    - My second vaccination was on 11.10.
+    - November 27
+    - January 1
+    - 28.11.2021
+    - 5 Nov
+    - Aug 21 2020
+    - 21st June
+    - On Dec 1
+    - Nov 15
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
