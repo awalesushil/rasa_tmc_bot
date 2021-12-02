@@ -59,6 +59,7 @@ nlu:
     - No, I didn't take any vaccination
     - No, I don't have it
     - Nope
+    - No
 - intent: chitchat
   examples: |
     - How is the weather?
@@ -133,6 +134,7 @@ nlu:
     - 5 Nov
     - Aug 21 2020
     - 21st June
+    - Jan 31
 - intent: inform_vaccine_name
   examples: |
     - I got Moderna

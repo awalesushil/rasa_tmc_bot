@@ -1,38 +1,21 @@
 version: '2.0'
-config:
-  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet:
-    use_entities: true
-- goodbye:
-    use_entities: true
-- affirm:
-    use_entities: true
-- deny:
-    use_entities: true
-- bot_challenge:
-    use_entities: true
-- chitchat:
-    use_entities: true
-- request_help:
-    use_entities: true
-- stop:
-    use_entities: true
-- inform_arrival_country:
-    use_entities: true
-- inform_departure_country:
-    use_entities: true
-- inform_departure_date:
-    use_entities: true
-- inform_vaccine_name:
-    use_entities: true
-- inform_last_vaccination_date:
-    use_entities: true
-entities: []
-slots: {}
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- chitchat
+- request_help
+- stop
+- inform_arrival_country
+- inform_departure_country
+- inform_departure_date
+- inform_vaccine_name
+- inform_last_vaccination_date
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -87,6 +70,3 @@ responses:
   - text: Thank you! Your information has been recorded.
   utter_slot_values:
   - text: 'You have submitted the following answers:'
-actions: []
-forms: {}
-e2e_actions: []
